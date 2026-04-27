@@ -102,9 +102,9 @@ async def main():
 
     res = tavily_crawl.invoke(
         {
-            "url": "https://python.langchain.com/",
-            "max_depth": 2,
-            "extract_depth": "advanced",
+            "url": "https://python.langchain.com/",#this is the url of the website to crawl
+            "max_depth": 2, # max depth of the crawl which is the number of levels of the website to crawl
+            "extract_depth": "advanced", # extract depth of the crawl which is the level of detail of the content to extract
             #"instructions": "content on ai agents" # instructions to the crawler to only crawl content on ai agents or any other specific topic
         }
     )
